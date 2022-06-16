@@ -29,9 +29,9 @@ code {
   box-sizing: border-box;
 }
 
-*::-webkit-scrollbar{
+/* *::-webkit-scrollbar{
   display: none;
-}
+} */
 
 
 /*============*/
@@ -67,6 +67,10 @@ code {
   /* animation: fade-out 500ms; */
   display: none;
 }
+
+/* .fade-out{
+  animation: fade-out 500ms;
+} */
 
 .not-hidden{
   display: unset;

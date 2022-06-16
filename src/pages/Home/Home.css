@@ -1,0 +1,117 @@
+main{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; */
+}
+
+button{
+  cursor: pointer;
+}
+
+div.main_content{
+  padding: 2em;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+div.action_buttons{
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
+}
+
+div.action_buttons > div.buttons_container{
+  display: flex;
+  gap: 1em;
+}
+
+div.action_buttons > div.buttons_container > button{
+  padding: 1em 2em;
+  background-color: rgb(70, 80, 225);
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  transition: all 400ms;
+}
+
+div.action_buttons > div.buttons_container > button:hover{
+  background-color: rgb(103, 113, 255);
+  /* color: rgb(78, 76, 76); */
+}
+
+
+
+
+/*=================*/
+/* Console Section */
+/*=================*/
+div.main_content > div.console{
+  margin: 2em auto;
+  /* max-width: 900px; */
+  
+}
+
+div.main_content > div.console > h3{
+  text-align: left;
+}
+
+div.main_content > div.console > div.console_screen{
+  height: 50vh;
+  width: 100%;
+  /* background-color: red; */
+  border: 1px solid grey;
+  font-family: monospace;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 1.7em;
+  overflow-y: scroll;
+  padding: 0.5em 1em;
+}
+
+div.console > div.console_screen > p{
+  margin: 0;
+}
+
+
+
+
+
+/*================*/
+/* Bottom Section */
+/*================*/
+div.main_content > div.bottom{
+  width: 100%;
+  
+}
+
+div.bottom > div.bottom_container{
+  display: flex;
+  justify-content: space-around;
+  /* background-color: red; */
+  border: 1px solid grey;
+  padding: 1em 0;
+  /* background: linear-gradient(to left, #134e5e, #71b280); */
+}
+
+div.bottom > div.bottom_container > *{
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1em;
+}
+
+div.bottom > div.bottom_container > input{
+  border: 1px solid silver;
+}
+
+div.bottom > div.bottom_container > input:focus{
+  outline: 2px solid silver;
+}
+
+div.bottom > div.bottom_container > button{
+  background-color: #1c8fd1;
+  color: white;
+}

@@ -3,6 +3,12 @@ main{
   align-items: center;
   justify-content: center;
   height: 100vh; */
+  /* background: linear-gradient(to left, #d38312, #a83279); */
+  /* background: linear-gradient(tomato 1%, rgb(255, 255, 255), rgb(255, 255, 255) 60%); */
+  /* background-color: rgb(253, 246, 234); */
+  background-color: rgb(253, 246, 234);
+
+  height: 100vh;
 }
 
 button{
@@ -13,17 +19,27 @@ div.main_content{
   padding: 2em;
   max-width: 980px;
   margin: 0 auto;
+  /* background-color: white; */
+  /* background-color: rgb(253, 246, 234); */
+  height: 100%;
+  /* box-shadow: 2px 2px 10px rgba(0,0,0,0.4); */
+}
+
+div.main_content > div.logo_container > h1{
+  color: rgb(2, 2, 87)
 }
 
 div.action_buttons{
   margin: 3em 0;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 div.action_buttons > div.buttons_container{
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 div.action_buttons > div.buttons_container > button{
@@ -61,7 +77,7 @@ div.main_content > div.console > h3{
 div.main_content > div.console > div.console_screen{
   height: 50vh;
   width: 100%;
-  /* background-color: red; */
+  background-color: white;
   border: 1px solid grey;
   font-family: monospace;
   font-size: 1.2em;
@@ -91,7 +107,7 @@ div.bottom > div.bottom_container{
   display: flex;
   justify-content: space-around;
   /* background-color: red; */
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   padding: 1em 0;
   /* background: linear-gradient(to left, #134e5e, #71b280); */
 }
@@ -124,6 +140,24 @@ div.bottom > div.bottom_container > button{
 /*================================*/
 /* Media Query For Mobile Devices */
 /*================================*/
-@media (max-width: 750px){
+@media (max-width: 770px){
+  main{
+    height: unset;
+  }
+  
+  div.action_buttons > div.buttons_container > button{
+    /* padding: 1em 1.3em; */
+    font-size: 0.9em;
+  }
 
+  div.action_buttons > div.buttons_container > *{
+    width: 45%;
+  }
+
+  div.bottom > div.bottom_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    border: none;
+  }
 }

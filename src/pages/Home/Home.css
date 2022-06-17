@@ -115,3 +115,15 @@ div.bottom > div.bottom_container > button{
   background-color: #1c8fd1;
   color: white;
 }
+
+
+
+
+
+
+/*================================*/
+/* Media Query For Mobile Devices */
+/*================================*/
+@media (max-width: 750px){
+
+}

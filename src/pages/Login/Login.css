@@ -224,10 +224,18 @@ form > div.buttons_container > button:nth-of-type(1){
   background-color: white;
   border: 2px solid var(--outline);
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 form > div.buttons_container > button:nth-of-type(1):hover{
   animation: bounce-horizontal 500ms ease-in-out
+}
+
+form > div.buttons_container > button:nth-of-type(1) > img{
+  height: 30px;
 }
 
 

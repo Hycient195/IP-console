@@ -1,6 +1,7 @@
 import "./Login.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import googleLogo from '../../images/login/googleLogo.svg';
 
 export default function Login(){
   // const [ emailPH, setEmailPH ] = useState("");
@@ -59,16 +60,11 @@ export default function Login(){
               </div>
 
               <div class="buttons_container">
-                {/* <Link to='/dashboard' > */}
-                {/* <button class="sign_in btn bg-red "> */}
-                  <Link className="btn fullwidth centralize bg-red white-text" to="/dashboard" >Sign in</Link>
-                {/* </button> */}
-                {/* </Link> */}
-                
+                  <Link className="btn fullwidth centralize bg-red white-text" to="/dashboard">Sign in</Link>    
                 <button class="sign_in_with_google btn fullwidth ">
-                  {/* <!-- <img src="" alt=""> --> */}
-                  <i>image</i>
-                  Sign in with Google
+                   <img src={googleLogo} alt=""/> 
+                  {/* <i>image</i> */}
+                  <span>Sign in with Google</span>
                 </button>
               </div>
             </form>

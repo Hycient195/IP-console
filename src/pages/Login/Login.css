@@ -1,0 +1,122 @@
+/*=================*/
+/* Utility Classes */
+/*=================*/
+.bg-red{
+  background-color: var(--pink-red);
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.grey-text{
+  color: rgb(109, 108, 108);
+}
+
+.fullwidth{
+  width: 100%;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+input{
+  cursor: pointer;
+}
+
+.text-input{
+  padding: calc(var(--base-padding)) calc(var(--base-padding) * 2);
+  border-radius: 1em;
+  border: 1px solid var(--outline);
+  outline: none;
+  transition: outline 400ms;
+  margin-bottom: var(--base-margin);
+}
+
+.text-input:focus{
+  outline: 2px solid var(--outline);
+}
+
+.centralize{
+  text-align: center;
+}
+
+.btn{
+  border-radius: 1em;
+  padding: calc(var(--base-padding) / 1.5) calc(var(--base-padding) * 2);
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+
+
+/*===================*/
+/* Main Page Content */
+/*===================*/
+
+body > div.page_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+div.page_container > div.page_left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--base-padding) * 2);
+}
+
+div.page_left > div.page_left_content{
+  width: 100%;
+  max-width: 500px;
+  min-width: 400px;
+}
+
+div.page_left_content > h1{
+  font-size: 3em;
+}
+
+div.page_left_content > p.subtitle{
+  margin-bottom: calc(var(--base-margin) * 4);
+}
+
+div.page_left_content > form > div.actions{
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--base-margin);
+}
+
+form > div.actions > label{
+  display: flex;
+  gap: var(--base-gap);
+  align-items: center;
+}
+
+form > div.buttons_container{
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base-gap));
+}
+
+form > div.buttons_container > button:nth-of-type(1){
+  color: white;
+}
+
+form > div.buttons_container > button:nth-of-type(2){
+  background-color: white;
+  border: 2px solid var(--outline);
+}
+
+
+
+
+/*====================*/
+/* Page Right Section */
+/*====================*/
+div.page_container > div.page_right{
+  background: linear-gradient(135deg, #c33764, #1d2671);
+}

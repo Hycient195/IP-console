@@ -6,7 +6,7 @@ main{
   /* background: linear-gradient(to left, #d38312, #a83279); */
   /* background: linear-gradient(tomato 1%, rgb(255, 255, 255), rgb(255, 255, 255) 60%); */
   /* background-color: rgb(253, 246, 234); */
-  background-color: rgb(253, 246, 234);
+  /* background-color: rgb(253, 246, 234); */
 
   height: 100vh;
 }
@@ -41,7 +41,7 @@ div.action_buttons > div.buttons_container{
 }
 
 div.action_buttons > div.buttons_container > button{
-  padding: 1em 2em;
+  padding: 1em 1.6em;
   background-color: rgb(70, 80, 225);
   border: none;
   border-radius: 0.5em;
@@ -83,6 +83,7 @@ div.main_content > div.console > div.console_screen{
   line-height: 1.7em;
   overflow-y: scroll;
   padding: 0.5em 1em;
+  border-left: 4px solid var(--pink-red);
 }
 
 div.console > div.console_screen > p{
@@ -139,6 +140,9 @@ div.bottom > div.bottom_container > button{
 /* Media Query For Mobile Devices */
 /*================================*/
 @media (max-width: 770px){
+  div.main_content{
+    padding: 1.5em;
+  }
   main{
     height: unset;
   }

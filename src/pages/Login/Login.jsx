@@ -1,4 +1,5 @@
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 export default function Login(){
   return(
@@ -43,7 +44,12 @@ export default function Login(){
               </div>
 
               <div class="buttons_container">
-                <button class="sign_in btn bg-red ">Sign in</button>
+                {/* <Link to='/dashboard' > */}
+                {/* <button class="sign_in btn bg-red "> */}
+                  <Link className="btn fullwidth centralize bg-red white-text" to="/dashboard" >Sign in</Link>
+                {/* </button> */}
+                {/* </Link> */}
+                
                 <button class="sign_in_with_google btn">
                   {/* <!-- <img src="" alt=""> --> */}
                   <i>image</i>

@@ -116,8 +116,9 @@ form > div.buttons_container{
   gap: calc(var(--base-gap));
 }
 
-form > div.buttons_container > button:nth-of-type(1){
+form > div.buttons_container > a{
   color: white;
+  text-decoration: none;
 }
 
 form > div.buttons_container > button:nth-of-type(2){

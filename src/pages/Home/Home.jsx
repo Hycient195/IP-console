@@ -27,7 +27,7 @@ const Home = () => {
     <main>
      <div className="main_content">
        <div className="logo_container">
-          <h1>Network Monitor</h1>
+          <h1 className="centralize" >Network Monitor</h1>
        </div>
 
        <div className="action_buttons">

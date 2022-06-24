@@ -25,18 +25,27 @@ input{
   cursor: pointer;
 }
 
+input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="email"]:hover{
+  animation: bounce-horizontal 500ms ease-in-out
+}
+
 .text-input{
   padding: calc(var(--base-padding) / 1.2) calc(var(--base-padding));
   border-radius: 0.5em;
   border: 1px solid var(--outline);
   outline: none;
   transition: outline 400ms;
+  margin: 0 auto;
   margin-bottom: var(--base-margin);
   font-size: 0.95em;
 }
 
 .text-input:focus{
   outline: 2px solid var(--outline);
+}
+
+.text-input:hover{
+  /* animation: bounce-horizontal 500ms ease-in-out */
 }
 
 .centralize{
@@ -53,10 +62,81 @@ input{
 
 
 
+/*====================*/
+/* Animations Section */
+/*====================*/
+@keyframes typing {
+  0%{
+    width: 0px
+  }
+  100%{
+    width: 200px;
+  }
+}
+
+@keyframes blink-border {
+  0%{
+    border-right: none;
+  }
+  100%{
+    border-right: 2px solid black;
+  }
+}
+
+@keyframes boounce-heading {
+  0%{
+    opacity: 100%;
+    transform: translateY(0px);    
+  }
+  14%{
+    transform: translateY(0px);
+    transform: translateY(-10px);
+  }
+  16%{
+    transform: translateY(20px);
+    transform: translateX(0px);
+  }
+  18%{
+    transform: translateY(-40px);
+  }
+  20%{
+    transform: translateY(20px);
+  }
+  22%{
+    transform: translateY(-40px);
+  }
+  25%{
+    transform: translateY(0px);
+  }
+  79%{
+    transform: translateY(-20px);
+  }
+  83%{
+    transform: translateY(-400px);
+    opacity: 100%;
+  }
+  83.1%{
+    transform: translateX(600px);
+    opacity: 0%;
+  }
+}
+
+@keyframes bounce-horizontal {
+  50%{
+    width: 80%;
+  }
+  70%{
+    width: 100%;
+  }
+  90%{
+    width: 93%;
+  }
+}
+
+
 /*===================*/
 /* Main Page Content */
 /*===================*/
-
 body > div.page_container{
   width: 100%;
   display: grid;
@@ -79,16 +159,19 @@ div.page_left > div.page_left_content{
 
 div.page_left_content > h1{
   font-size: 3em;
+  animation: boounce-heading 10s ease-out infinite;
 }
 
 div.page_left_content > p.subtitle{
   margin-bottom: calc(var(--base-margin) * 4);
+  /* overflow-y: hidden; */
+  /* text-overflow:initial; */
+  /* background-color: red;; */
+  /* animation: typing 5s ease-in-out infinite; */
 }
 
 form > div.form_top_content {
   display: grid;
-  /* width: 100vw; */
-  /* background-color: red; */
   gap: calc(var(--base-gap) / 2);
   grid-template-columns: 3fr 2fr;
 }
@@ -114,19 +197,30 @@ form > div.buttons_container{
   display: flex;
   flex-direction: column;
   gap: calc(var(--base-gap));
+  justify-content: center; 
 }
 
 form > div.buttons_container > a{
   color: white;
   text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
 }
 
-form > div.buttons_container > button:nth-of-type(2){
+form > div.buttons_container > a:hover{
+  animation: bounce-horizontal 500ms ease-in-out
+}
+
+
+form > div.buttons_container > button:nth-of-type(1){
   background-color: white;
   border: 2px solid var(--outline);
+  margin: 0 auto;
 }
 
-
+form > div.buttons_container > button:nth-of-type(1):hover{
+  animation: bounce-horizontal 500ms ease-in-out
+}
 
 
 /*====================*/
@@ -137,6 +231,11 @@ div.page_container > div.page_right{
 }
 
 
+
+
+/*================================*/
+/* Media Query For Mobile Devices */
+/*================================*/
 @media (max-width: 750px){
   .text-input{
     margin-bottom: unset;
@@ -157,7 +256,6 @@ div.page_container > div.page_right{
   }
 
   div.page_container > div.page_right{
-    /* background: linear-gradient(135deg, #c33764, #1d2671); */
     display: none;
   }
 }

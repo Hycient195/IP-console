@@ -1,7 +1,22 @@
 import "./Login.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Login(){
+  // const [ emailPH, setEmailPH ] = useState("");
+  // const emailString = "Enter your email"
+  // const condition = false;
+
+  // for (let index = 0; index < emailString.length; index++) {
+  //   // const element = array[index];
+  //   setInterval(() => {
+  //     setEmailPH(prevState => prevState += emailString[index])
+  //   }, 2000);
+    
+  // }
+
+  // console.log(emailPH);
+
   return(
     <body>
       <div class="page_container">
@@ -14,12 +29,12 @@ export default function Login(){
               <div className="form_top_content">
                 <label for="username">
                   <p class="username">Username</p>
-                  <input class=" text-input" id="email" type="email" placeholder="Enter your email"/>
+                  <input class=" text-input" id="username" type="email" placeholder="Enter your email"/>
                 </label>
 
-                <label for="username">
+                <label for="port">
                   <p class="username">Port</p>
-                  <input class=" text-input" id="email" type="email" placeholder="Enter port"/>
+                  <input class=" text-input" id="port" type="number" placeholder="Enter port"/>
                 </label>
               </div>
 
@@ -50,7 +65,7 @@ export default function Login(){
                 {/* </button> */}
                 {/* </Link> */}
                 
-                <button class="sign_in_with_google btn">
+                <button class="sign_in_with_google btn fullwidth ">
                   {/* <!-- <img src="" alt=""> --> */}
                   <i>image</i>
                   Sign in with Google

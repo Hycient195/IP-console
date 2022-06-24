@@ -70,12 +70,12 @@ const Home = () => {
          </div>
        </div>
 
-      <div className="bottom">
+      {/* <div className="bottom">
         <div className="bottom_container">
           <input type="text" placeholder="Enter email" />
           <button className="">Send To Admin</button>
         </div>
-      </div>
+      </div> */}
 
      </div>
     </main>

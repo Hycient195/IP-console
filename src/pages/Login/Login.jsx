@@ -10,6 +10,11 @@ export default function Login(){
             <p class="subtitle grey-text" >Please enter your details</p>
             <form action="">
 
+              <label for="username">
+                <p class="username">Username</p>
+                <input class="fullwidth text-input" id="email" type="email" placeholder="Enter your email"/>
+              </label>
+
               <label for="email">
                 <p class="email">Email</p>
                 <input class="fullwidth text-input" id="email" type="email" placeholder="Enter your email"/>

@@ -27,7 +27,7 @@ input{
 
 .text-input{
   padding: calc(var(--base-padding)) calc(var(--base-padding) * 2);
-  border-radius: 1em;
+  border-radius: 0.5em;
   border: 1px solid var(--outline);
   outline: none;
   transition: outline 400ms;
@@ -119,4 +119,30 @@ form > div.buttons_container > button:nth-of-type(2){
 /*====================*/
 div.page_container > div.page_right{
   background: linear-gradient(135deg, #c33764, #1d2671);
+}
+
+
+@media (max-width: 750px){
+  .text-input{
+    margin-bottom: unset;
+  }
+
+  body > div.page_container{
+    grid-template-columns: 1fr;
+  }
+
+  div.page_left > div.page_left_content{
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+  }
+
+  div.page_left_content > h1{
+    font-size: 2.5em;
+  }
+
+  div.page_container > div.page_right{
+    /* background: linear-gradient(135deg, #c33764, #1d2671); */
+    display: none;
+  }
 }

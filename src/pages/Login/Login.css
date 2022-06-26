@@ -164,10 +164,6 @@ div.page_left_content > h1{
 
 div.page_left_content > p.subtitle{
   margin-bottom: calc(var(--base-margin) * 4);
-  /* overflow-y: hidden; */
-  /* text-overflow:initial; */
-  /* background-color: red;; */
-  /* animation: typing 5s ease-in-out infinite; */
 }
 
 form > div.form_top_content {

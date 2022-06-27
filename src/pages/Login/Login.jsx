@@ -24,7 +24,7 @@ export default function Login(){
         <div class="page_left">
           <div class="page_left_content">
             <h1 class="title" >WELCOME BACK</h1>
-            <p class="subtitle grey-text" >Please enter your details</p>
+            <p class="subtitle green-text" >Please enter your details</p>
             <form action="">
 
               <div className="form_top_content">
@@ -55,23 +55,22 @@ export default function Login(){
                   <p class="">Remember me</p>
                 </label>
                 <p>
-                  <a href="#">Forgot password</a>
+                  {/* <a href="#">Forgot password</a> */}
                 </p>
               </div>
 
               <div class="buttons_container">
-                  <Link className="btn fullwidth centralize bg-red white-text" to="/dashboard">Sign in</Link>    
-                <button class="sign_in_with_google btn fullwidth ">
+                  <Link className="btn fullwidth centralize bg-light-green black-text" to="/dashboard">Sign in</Link>    
+                {/* <button class="sign_in_with_google btn fullwidth ">
                    <img src={googleLogo} alt=""/> 
-                  {/* <i>image</i> */}
                   <span>Sign in with Google</span>
-                </button>
+                </button> */}
               </div>
             </form>
 
-            <p class="centralize">
+            {/* <p class="centralize">
               Don't have an account? <a class="red-text" href="#">Sign up for free</a>
-            </p>
+            </p> */}
           </div>
         </div>
         <div class="page_right">

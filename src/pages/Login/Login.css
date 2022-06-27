@@ -31,17 +31,22 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
 
 .text-input{
   padding: calc(var(--base-padding) / 1.2) calc(var(--base-padding));
-  border-radius: 0.5em;
-  border: 1px solid var(--outline);
+  /* border-radius: 0.5em; */
+  border: 1px solid var(--green);
   outline: none;
   transition: outline 400ms;
   margin: 0 auto;
   margin-bottom: var(--base-margin);
   font-size: 0.95em;
+  background-color: var(--black);
+}
+
+.text-input::placeholder{
+  color: var(--green) !important;
 }
 
 .text-input:focus{
-  outline: 2px solid var(--outline);
+  outline: 2px solid var(--light-green);
 }
 
 .text-input:hover{

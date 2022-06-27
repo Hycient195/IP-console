@@ -39,7 +39,7 @@ a{
   --pink-red: #EA454C;
   --light-green: #07E77B;
   --green: #197c4c;
-  --light-black: rgba(0,0,0, 0.88);
+  --light-black: rgba(0,0,0, 0.9);
   --black: rgba(0,0,0, 0.03);
 }
 
@@ -93,4 +93,21 @@ a{
 
 .not-hidden{
   display: unset;
+}
+
+
+.green-text{
+  color: var(--green);
+}
+
+.black-text{
+  color: black !important;
+}
+
+.bg-green{
+  background-color: var(--green);
+}
+
+.bg-light-green{
+  background-color: var(--light-green);
 }

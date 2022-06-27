@@ -104,6 +104,10 @@ a{
   color: black !important;
 }
 
+.red-text{
+  color: rgba(225,10,10,0.8);
+}
+
 .bg-green{
   background-color: var(--green);
 }

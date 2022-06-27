@@ -149,6 +149,8 @@ div.page_container > div.page_left{
   align-items: center;
   justify-content: center;
   padding: calc(var(--base-padding) * 2);
+  background-color: var(--light-black);
+  color: var(--light-green);
 }
 
 div.page_left > div.page_left_content{

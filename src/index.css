@@ -37,6 +37,10 @@ a{
   --base-gap: 1em;
   --outline: rgba(0, 0, 0, 0.25);
   --pink-red: #EA454C;
+  --light-green: #07E77B;
+  --green: #197c4c;
+  --light-black: rgba(0,0,0, 0.88);
+  --black: rgba(0,0,0, 0.03);
 }
 
 

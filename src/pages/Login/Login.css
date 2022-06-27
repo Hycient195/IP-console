@@ -39,6 +39,7 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
   margin-bottom: var(--base-margin);
   font-size: 0.95em;
   background-color: var(--black);
+  color: var(--light-green)
 }
 
 .text-input::placeholder{
@@ -126,7 +127,7 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
   }
 }
 
-@keyframes bounce-horizontal {
+/* @keyframes bounce-horizontal {
   0%{
     width: 80%;
   }
@@ -151,7 +152,25 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
   15%{
     width: 100%;
   }
+} */
+
+@keyframes bounce-horizontal  {
+  50%{
+    width: 93%;
+  }
 }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 
 
 /*===================*/
@@ -188,7 +207,15 @@ div.page_left > div.page_left_content{
 
 div.page_left_content > h1{
   font-size: 3em;
-  animation: boounce-heading 10s ease-out infinite;
+  /* animation: boounce-heading 10s ease-out infinite; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  max-width: max-content !important;
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.8s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
 }
 
 div.page_left_content > p.subtitle{
@@ -238,7 +265,8 @@ form > div.buttons_container > a{
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
-  animation: bounce-horizontal 10s ease-in-out infinite
+  /* animation: bounce-horizontal 10s ease-in-out infinite */
+  animation:  bounce-horizontal 1s ease-in-out infinite;
 }
 
 /* form > div.buttons_container > a:hover{

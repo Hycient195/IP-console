@@ -59,7 +59,7 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
 }
 
 .btn{
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   padding: calc(var(--base-padding) / 1.5) calc(var(--base-padding) * 2);
   border: none;
   font-size: 1.1em;
@@ -297,7 +297,8 @@ form > div.buttons_container > button:nth-of-type(1) > img{
 /* Page Right Section */
 /*====================*/
 div.page_container > div.page_right{
-  background: linear-gradient(135deg, #c33764, #1d2671);
+  /* background: linear-gradient(135deg, #c33764, #1d2671); */
+  background: linear-gradient(135deg, #134e5e, #71b280);
 }
 
 

@@ -127,14 +127,29 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
 }
 
 @keyframes bounce-horizontal {
-  50%{
+  0%{
     width: 80%;
   }
-  70%{
+  2%{
     width: 100%;
   }
-  90%{
+  4%{
     width: 93%;
+  }
+  6%{
+    width: 100%;
+  }
+  8%{
+    width: 80%;
+  }
+  10%{
+    width: 100%;
+  }
+  12%{
+    width: 93%;
+  }
+  15%{
+    width: 100%;
   }
 }
 
@@ -149,19 +164,26 @@ body > div.page_container{
   height: 100vh;
 }
 
-div.page_container > div.page_left{
+div.page_container > div.page_left_container{
+  background: url(../../assets/login/images/hacky.gif);
+}
+
+div.page_container > div.page_left_container > div.page_left{
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
   padding: calc(var(--base-padding) * 2);
-  background-color: var(--light-black);
+  background-color: rgba(0,0,0,0.75);
   color: var(--light-green);
+
 }
 
 div.page_left > div.page_left_content{
   width: 100%;
   max-width: 600px;
   min-width: 500px;
+  /* background: url(../../assets/login/images/hacky.gif); */
 }
 
 div.page_left_content > h1{
@@ -216,11 +238,12 @@ form > div.buttons_container > a{
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
+  animation: bounce-horizontal 10s ease-in-out infinite
 }
 
-form > div.buttons_container > a:hover{
+/* form > div.buttons_container > a:hover{
   animation: bounce-horizontal 500ms ease-in-out
-}
+} */
 
 
 form > div.buttons_container > button:nth-of-type(1){

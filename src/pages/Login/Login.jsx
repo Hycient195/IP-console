@@ -21,6 +21,7 @@ export default function Login(){
   return(
     <body>
       <div class="page_container">
+        <div className="page_left_container">
         <div class="page_left">
           <div class="page_left_content">
             <h1 class="title" >WELCOME BACK</h1>
@@ -72,6 +73,7 @@ export default function Login(){
               Don't have an account? <a class="red-text" href="#">Sign up for free</a>
             </p> */}
           </div>
+        </div>
         </div>
         <div class="page_right">
 

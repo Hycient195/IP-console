@@ -174,7 +174,7 @@ div.page_container > div.page_left_container > div.page_left{
   align-items: center;
   justify-content: center;
   padding: calc(var(--base-padding) * 2);
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.8);
   color: var(--light-green);
 
 }

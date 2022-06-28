@@ -24,7 +24,7 @@ const Dashboard = () => {
 
 
   return(
-    <main>
+    <main className="dashboard_body" >
      <div className="main_content">
        <div className="logo_container">
           <h1 className="centralize" >Network Monitor</h1>
@@ -41,7 +41,7 @@ const Dashboard = () => {
        </div>
 
        <div className="console">
-         <h3 className="">Console</h3>
+         <h3 className="orange-text">Console</h3>
          <div className="console_screen">
           <p>address 192.168.0.0.1 active</p>
           <p>address 192.168.0.0.1 active</p>

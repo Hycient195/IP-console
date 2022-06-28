@@ -108,12 +108,20 @@ a{
   color: var(--green);
 }
 
+.light-green-text{
+  color: var(--light-green);
+}
+
 .black-text{
   color: black !important;
 }
 
 .red-text{
   color: rgba(225,10,10,0.8);
+}
+
+.orange-text{
+  color: orange;
 }
 
 .bg-green{

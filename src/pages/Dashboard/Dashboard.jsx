@@ -1,27 +1,6 @@
-// import heroVideo from '/assets/home/hero-loop.mp4';
-// import Hycient from '/Hycient.png'
-import { useState } from "react";
-// import { exploreMenu } from '../../constants';
-
-
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  // const [ explore, setExplore ] = useState({
-  //   title: exploreMenu[0].title, image: exploreMenu[0].image, content: exploreMenu[0].content
-  // })
-  
-  // const loadExploreItem = e =>{
-  //   console.log(e)
-  //   exploreMenu.forEach(item =>{
-  //     if(item.title == e){
-  //       setExplore({
-  //         title: item.title, image: item.image, content: item.content
-  //       })
-  //     }
-  //   })
-  // }
-
 
   return(
     <main className="dashboard_body" >
@@ -41,7 +20,7 @@ const Dashboard = () => {
        </div>
 
        <div className="console">
-         <h3 className="orange-text">Console</h3>
+         <h3 className="orange-text">Console:</h3>
          <div className="console_screen">
           <p>address 192.168.0.0.1 active</p>
           <p>address 192.168.0.0.1 active</p>
@@ -69,13 +48,6 @@ const Dashboard = () => {
           <p>address 192.168.0.0.1 disabled</p>
          </div>
        </div>
-
-      {/* <div className="bottom">
-        <div className="bottom_container">
-          <input type="text" placeholder="Enter email" />
-          <button className="">Send To Admin</button>
-        </div>
-      </div> */}
 
      </div>
     </main>

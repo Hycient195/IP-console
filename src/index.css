@@ -32,10 +32,7 @@
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-    font-family: Fira Code;
+  font-family: Fira Code;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,53 +48,10 @@ a{
 }
 
 
-
-
-
-
-
-/* *::-webkit-scrollbar{
-  display: none;
-} */
-
-
-/*============*/
-/* Animations */
-/*============*/
-@keyframes fade-in{
-  0%{
-    opacity: 0%;
-    transform: translateY(100%);
-  }
-  100%{
-    opacity: 100%;
-    transform: translateY(0%);
-
-  }
-}
-
-@keyframes fade-out{
-  0%{
-    /* opacity: 100%; */
-    transform: translateY(0%);
-
-  }
-  100%{
-    /* opacity: 0%; */
-    transform: translateY(100%);
-  }
-}
-
-
-
 .hidden{
-  /* animation: fade-out 500ms; */
   display: none;
 }
 
-/* .fade-out{
-  animation: fade-out 500ms;
-} */
 
 .not-hidden{
   display: unset;

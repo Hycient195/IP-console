@@ -1,49 +1,69 @@
+/* ============ */
+/* Global Rules */
+/* ============ */
 *::-webkit-scrollbar{
   display: none;
-}
-
-main.dashboard_body{
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; */
-  /* background: linear-gradient(to left, #d38312, #a83279); */
-  /* background: linear-gradient(tomato 1%, rgb(255, 255, 255), rgb(255, 255, 255) 60%); */
-  /* background-color: rgb(253, 246, 234); */
-  /* background-color: rgb(253, 246, 234); */
-
-  height: 100vh ;
-  background-color: var(--light-black);
-  /* background-color: black; */
-  background-image: url(../../../public/assets/dashboard/binary_ish.png);
-  /* background-size: 150%; */
-  /* background-size: 100vh; */
-  background-repeat: no-repeat;
 }
 
 button{
   cursor: pointer;
 }
 
+
+
+
+/* ============================== */
+/* Beginning of Dashboard Section */
+/* ============================== */
+main.dashboard_body{
+  height: 100vh;
+  background-color: var(--light-black);
+  background-image: url(../../../public/assets/dashboard/binary_ish.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 div.main_content{
   padding: 2em;
-  max-width: 980px;
-  margin: 0 auto;
   height: 100%;
   background-color: rgba(0,0,0,0.7);
-  /* box-shadow: 2px 2px 10px rgba(0,0,0,0.4); */
+  width: 100%;
+}
+main.dashboard_body{
+  height: 100vh;
+  background-color: var(--light-black);
+  background-image: url(../../../public/assets/dashboard/binary_ish.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.main_content > *{
+  max-width: 980px;
 }
 
 
+
+
+
+/* ========================== */
+/* Beginning Of Title Section */
+/* ========================== */
 div.main_content > div.logo_container > h1{
-  /* color: rgb(2, 2, 87) */
-  color: var(--light-green)
+  color: var(--light-green);
+  margin: 0 auto;
+  text-align: center;
+  width: calc(100vw - 2em)
 }
 
+
+
+
+
+
+/* ============================= */
+/* Beginning Of Buttons Section */
+/* ============================= */
 div.action_buttons{
-  margin: 3em 0;
-  /* display: flex; */
-  /* justify-content: center; */
+  margin: 3em auto;
 }
 
 div.action_buttons > div.buttons_container{
@@ -55,10 +75,8 @@ div.action_buttons > div.buttons_container{
 
 div.action_buttons > div.buttons_container > button{
   padding: 1em 1.6em;
-  /* background-color: rgb(70, 80, 225); */
   background-color:black;
   border: 1px solid var(--light-green);
-  /* border: none; */
   border-radius: 0.5em;
   font-size: 1em;
   font-weight: bold;
@@ -75,14 +93,11 @@ div.action_buttons > div.buttons_container > button:hover{
 
 
 
-/*=================*/
-/* Console Section */
-/*=================*/
+/*==============================*/
+/* Beginning of Console Section */
+/*==============================*/
 div.main_content > div.console{
   margin: 2em auto;
-  
-  /* max-width: 900px; */
-  
 }
 
 div.main_content > div.console > h3{
@@ -93,7 +108,6 @@ div.main_content > div.console > div.console_screen{
   height: 50vh;
   width: 100%;
   background-color: white;
-  /* border: 1px solid var(--green); */
   font-family: monospace;
   font-size: 1.2em;
   text-align: left;
@@ -113,9 +127,9 @@ div.console > div.console_screen > p{
 
 
 
-/*================*/
-/* Bottom Section */
-/*================*/
+/*=============================*/
+/* Beginning of Bottom Section */
+/*=============================*/
 div.main_content > div.bottom{
   width: 100%;
   
@@ -124,10 +138,7 @@ div.main_content > div.bottom{
 div.bottom > div.bottom_container{
   display: flex;
   justify-content: space-around;
-  /* background-color: red; */
-  /* border: 1px solid grey; */
   padding: 1em 0;
-  /* background: linear-gradient(to left, #134e5e, #71b280); */
 }
 
 div.bottom > div.bottom_container > *{
@@ -165,9 +176,12 @@ div.bottom > div.bottom_container > button{
   main{
     height: unset;
   }
+
+  main.dashboard_body{
+    background-size: unset;
+  }
   
   div.action_buttons > div.buttons_container > button{
-    /* padding: 1em 1.3em; */
     font-size: 0.9em;
   }
 

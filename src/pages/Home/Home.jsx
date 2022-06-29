@@ -15,10 +15,7 @@ export default function Home(){
              Administrator Network Monitor
           </h1>
           <h4>Analysis, Report Generation and Troubleshooting</h4>
-         </div>
-
-         {/* <h1>hello</h1> */}
-         
+         </div>         
         <Link to="/login" className="" >Sign In</Link>
        </div>
      </div>

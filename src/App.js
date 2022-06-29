@@ -8,10 +8,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
-      {/* <Dashboard/> */}
-      {/* <Login/> */}
-      {/* <Footer/> */}
       <BrowserRouter>
         <Routes>
           <Route index element={<Home/>} />

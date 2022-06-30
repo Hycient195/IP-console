@@ -75,7 +75,7 @@ a{
 }
 
 .orange-text{
-  color: orange;
+  color: orange !important;
 }
 
 .bg-green{

@@ -15,23 +15,23 @@ export default function Login(){
 
               <div className="form_top_content">
                 <label for="username">
-                  <p class="username">Username:</p>
+                  <p class="username ">Username:</p>
                   <input class=" text-input" id="username" type="email" placeholder="johndoe3156"/>
                 </label>
 
                 <label for="port">
-                  <p class="username">Port:</p>
+                  <p class="username ">Port:</p>
                   <input class=" text-input" id="port" type="number" placeholder="8080"/>
                 </label>
               </div>
 
               <label for="email">
-                <p class="email">Email:</p>
+                <p class="email ">Email:</p>
                 <input class="fullwidth text-input" id="email" type="email" placeholder="johndoe@gmail.com"/>
               </label>
 
               <label for="password">
-                <p class="password">Password:</p>
+                <p class="password ">Password:</p>
                 <input class="fullwidth text-input" id="password" type="password" placeholder=""/>
               </label>
 

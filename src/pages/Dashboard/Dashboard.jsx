@@ -1,6 +1,17 @@
+import { useState } from "react";
 import "./Dashboard.css";
 
 const Dashboard = () => {
+
+  const [ sniffState, setSniffState ] = useState("Start Sniff")
+  const handleSniffStateChange = () =>{
+    if (sniffState === "Start Sniff") {
+      setSniffState("Stop Sniff")
+    }else if(sniffState === "Stop Sniff"){
+      setSniffState("Start Sniff")
+    }
+  }
+  
 
   return(
     <main className="dashboard_body" >
@@ -11,7 +22,7 @@ const Dashboard = () => {
 
        <div className="action_buttons">
          <div className="buttons_container">
-          <button className="">Sniff Packets</button>
+          <button onClick={handleSniffStateChange} className="">{sniffState}</button>
           <button className="">Scan Network</button>
           <button className="">Check For Intrusions</button>
           <button className="">Clear Mac Addresses</button>

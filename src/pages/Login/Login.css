@@ -77,7 +77,6 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hov
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: red; }

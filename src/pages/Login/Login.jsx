@@ -32,7 +32,7 @@ export default function Login(){
                 </label>
 
                 <label htmlFor="ip-list-file">
-                  <p className="">Upload Allowed IPs:</p>
+                  <p className="">Allowed Mac Address:</p>
                   <input type="file" />
                 </label>
               </div>

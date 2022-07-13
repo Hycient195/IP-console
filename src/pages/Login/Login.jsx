@@ -25,10 +25,18 @@ export default function Login(){
                 </label>
               </div>
 
-              <label for="email">
-                <p class="email ">Email:</p>
-                <input class="fullwidth text-input" id="email" type="email" placeholder="johndoe@gmail.com"/>
-              </label>
+              <div className="form_middle_content">
+                <label for="email">
+                  <p class="email ">Email:</p>
+                  <input class="fullwidth text-input" id="email" type="email" placeholder="johndoe@gmail.com"/>
+                </label>
+
+                <label htmlFor="ip-list-file">
+                  <p className="">Upload Allowed IPs</p>
+                  <input type="file" />
+                </label>
+              </div>
+              
 
               <label for="password">
                 <p class="password ">Password:</p>

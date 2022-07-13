@@ -150,6 +150,26 @@ div.page_left_content > form > label > p{
   color: orange;
 }
 
+div.page_left_content > form > div.form_middle_content{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: calc(var(--base-gap) / 2);
+  color: orange;
+}
+
+form > div.form_middle_content > label > input[type="file"]{
+  padding: 0.8em;
+  /* height: 100%; */
+  border: 1px solid var(--green);
+  color: var(--green);
+  width: 200px;
+  }
+
+  div.form_middle_content > label > input#file-upload-button{
+    background-color: red !important;
+    color: blue !important;
+  }
+
 div.page_left_content > form > div.actions{
   display: flex;
   justify-content: space-between;

@@ -3,12 +3,47 @@ import "./Dashboard.css";
 
 const Dashboard = () => {
 
-  const [ sniffState, setSniffState ] = useState("Start Sniff")
-  const handleSniffStateChange = () =>{
-    if (sniffState === "Start Sniff") {
-      setSniffState("Stop Sniff")
-    }else if(sniffState === "Stop Sniff"){
-      setSniffState("Start Sniff")
+  const [ buttonState, setButtonState ] = useState({
+    sniff: "Start Sniff", scan: "Start Scan",
+    intrusion: "Start Intrusion Check",
+    monitoring: "Start Network Monitoring"
+  })
+  const handleSniffStateChange = (e) =>{
+    const eventText = e.target.textContent;
+    switch (eventText) {
+      case "Start Sniff":
+        setButtonState({...buttonState, sniff: "Stop Sniff"});
+        break;
+
+      case "Stop Sniff":
+        setButtonState({...buttonState, sniff: "Start Sniff"});
+        break;
+
+      case "Start Scan":
+        setButtonState({...buttonState, scan: "Stop Scan"});
+        break;
+
+      case "Stop Scan":
+        setButtonState({...buttonState, scan: "Start Scan"});
+        break;
+
+      case "Start Intrusion Check":
+        setButtonState({...buttonState, intrusion: "Stop Intrusion Check"});
+        break;
+
+      case "Stop Intrusion Check":
+        setButtonState({...buttonState, intrusion: "Start Intrusion Check"});
+        break;
+
+      case "Start Network Monitoring":
+        setButtonState({...buttonState, monitoring: "Stop Network Monitoring"});
+        break;
+
+      case "Stop Network Monitoring":
+        setButtonState({...buttonState, monitoring: "Start Network Monitoring"});
+    
+      default:
+        break;
     }
   }
   
@@ -22,11 +57,11 @@ const Dashboard = () => {
 
        <div className="action_buttons">
          <div className="buttons_container">
-          <button onClick={handleSniffStateChange} className="">{sniffState}</button>
-          <button className="">Scan Network</button>
-          <button className="">Check For Intrusions</button>
-          <button className="">Clear Mac Addresses</button>
-          <button className="">Monitor Network</button>
+          <button onClick={handleSniffStateChange} className="">{buttonState.sniff}</button>
+          <button onClick={handleSniffStateChange} className="">{buttonState.scan}</button>
+          <button onClick={handleSniffStateChange} className="">{buttonState.intrusion}</button>
+          <button onClick={handleSniffStateChange} className="">Clear Mac Addresses</button>
+          <button onClick={handleSniffStateChange} className="">{buttonState.monitoring}</button>
          </div>
        </div>
 

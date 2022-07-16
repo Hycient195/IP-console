@@ -60,6 +60,19 @@ const Dashboard = () => {
          </div>
        </div>
 
+       <section className="upload_file">
+           <form className="file_upload_form" action="">
+             <label htmlFor="">
+               <p>Upload Mac Address</p>
+               <input type="file" />
+             </label>
+             <label htmlFor="ip-address">
+               <p>Upload IP Address</p>
+               <input type="file" />
+             </label>
+           </form>
+       </section>
+
      </div>
     </main>
   )

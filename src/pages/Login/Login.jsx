@@ -31,10 +31,10 @@ export default function Login(){
                   <input class="fullwidth text-input" id="email" type="email" placeholder="johndoe@gmail.com"/>
                 </label>
 
-                <label htmlFor="ip-list-file">
+                {/* <label htmlFor="ip-list-file">
                   <p className="">Upload Allowed Mac Addresses:</p>
                   <input type="file" />
-                </label>
+                </label> */}
               </div>
               
 

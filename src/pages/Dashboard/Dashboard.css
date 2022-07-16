@@ -9,6 +9,10 @@ button{
   cursor: pointer;
 }
 
+*{
+  /* outline: 1px dashed white; */
+}
+
 
 
 
@@ -17,7 +21,7 @@ button{
 /* ============================== */
 main.dashboard_body{
   height: 100vh;
-  background-color: var(--light-black);
+  /* background-color: var(--light-black); */
   background-image: url(../../../public/assets/dashboard/binary_ish.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -30,7 +34,7 @@ div.main_content{
   width: 100%;
 }
 main.dashboard_body{
-  height: 100vh;
+  height: max-content;
   background-color: var(--light-black);
   background-image: url(../../../public/assets/dashboard/binary_ish.png);
   background-size: contain;
@@ -164,6 +168,38 @@ div.bottom > div.bottom_container > button{
 
 
 
+/*=====================*/
+/* Upload File Section */
+/*=====================*/
+section.upload_file{
+  margin: 0 auto;
+  text-align: center;
+}
+
+form.file_upload_form{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: space-around;
+  color: var(--light-green);
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid var(--light-green);
+  padding: 1em 0.5em;
+  margin: 0 auto;
+}
+
+form.file_upload_form p{
+  margin: 0.1em 0;
+  color: orange;
+}
+
+form.file_upload_form > label input{
+  max-width: 180px;
+}
+
+
+
 
 
 /*================================*/
@@ -194,5 +230,9 @@ div.bottom > div.bottom_container > button{
     grid-template-columns: 1fr;
     gap: 1em;
     border: none;
+  }
+
+  form.file_upload_form {
+    flex-direction: column;
   }
 }
